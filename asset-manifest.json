@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4571f00b.css",
-    "main.js": "/portfolio/static/js/main.caaa5978.js",
+    "main.css": "/portfolio/static/css/main.e025627d.css",
+    "main.js": "/portfolio/static/js/main.370407fb.js",
     "static/media/my_image.png": "/portfolio/static/media/my_image.8d9be42a477facc1ccb4.png",
     "static/media/portfolio-6.png": "/portfolio/static/media/portfolio-6.4a10fac7d271e87859e9.png",
     "static/media/portfolio-4.png": "/portfolio/static/media/portfolio-4.8e8bac5e33dc3f211e2b.png",
     "static/media/portfolio-1.png": "/portfolio/static/media/portfolio-1.b33adf772d54ab33e953.png",
-    "static/media/Pranav_srivastava_Resume.png": "/portfolio/static/media/Pranav_srivastava_Resume.d1d687d74f8200843487.png",
     "static/media/react_icon.png": "/portfolio/static/media/react_icon.81ed438b18e24116794d.png",
     "static/media/python_icon.png": "/portfolio/static/media/python_icon.dea924d737bb84eb9ce3.png",
     "static/media/Bootstrap_icon.png": "/portfolio/static/media/Bootstrap_icon.f132cb791703420e69ca.png",
@@ -22,11 +21,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/download_font.svg": "/portfolio/static/media/download_font.1aa3c8a499a28f0973cec576d81507f7.svg",
     "static/media/message-solid.svg": "/portfolio/static/media/message-solid.f2e7cb30d001339b1625ecae74a70b16.svg",
-    "main.4571f00b.css.map": "/portfolio/static/css/main.4571f00b.css.map",
-    "main.caaa5978.js.map": "/portfolio/static/js/main.caaa5978.js.map"
+    "main.e025627d.css.map": "/portfolio/static/css/main.e025627d.css.map",
+    "main.370407fb.js.map": "/portfolio/static/js/main.370407fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.4571f00b.css",
-    "static/js/main.caaa5978.js"
+    "static/css/main.e025627d.css",
+    "static/js/main.370407fb.js"
   ]
 }
