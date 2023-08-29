@@ -1,0 +1,96 @@
+#contactPage{
+    min-width: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conatctPageTitle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+.constactDesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+.conatactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: None;
+    border-radius: 0.5rem;
+    background: rgb(40,40,40);
+}
+.submitBtn{
+    background-color: white;
+    padding: 0.75rem 3rem;
+    border: None;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.submitBtnspan{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: -10rem;
+    z-index: -1;
+    transition: all 2.9s;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+    cursor: pointer;
+    transition: transform 0.5sec;
+}
+.linkedin{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: None;
+    color: white;
+    margin: 2px 0.75rem;
+    padding: 7px;
+    font-weight: 600;
+    background-color: rgb(1, 150, 187);
+    cursor: pointer;
+    transition: transform 0.5sec;
+}
+
+.link:hover,.linkedin:hover{
+    transform: perspective(300px) translateZ(4rem);
+}

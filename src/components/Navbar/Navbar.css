@@ -1,0 +1,86 @@
+.navbar{
+    background: rgb(30,30,30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding:1rem 2rem ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+.desktopMenuSocial{
+    display: flex;
+}
+
+.desktopMenuSocial .linkedin{
+    padding-left: 0.8rem;
+}
+
+.desktopMenueListItem{
+    margin: 1rem;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+.desktopMenueListItem::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: yellow;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+
+.desktopMenueListItem:hover::after{
+    transform: scale(1);
+}
+
+.desktopMenueListItem:hover{
+    color: yellow;
+    padding-bottom: 0.1rem;
+    letter-spacing: 0.25em;
+}
+
+.desktopMenuBtn{
+    background: white;
+    color: black;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    /* border-radius: 2rem; */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px white;
+}
+
+
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+    
+}
+
+.desktopMenuImg:hover{
+    display: None;
+}

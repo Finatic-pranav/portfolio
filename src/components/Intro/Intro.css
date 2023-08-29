@@ -1,0 +1,102 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    right: -10rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    width: 80vh;
+}
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+/* .hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+} */
+
+.introText, .hello{
+    text-shadow: 0px 0px 20px grey;
+}
+
+.introName{
+    color: yellow;
+}
+
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn{
+    background: rgb(30,30,30);
+    color: white;
+    margin: 1rem 1rem 1rem 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid white;
+    /* border-radius: 2rem; */
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.btnEffect{
+    height: 100%;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: -11rem;
+    z-index: -1;
+    transition: left 0.6s;
+}
+
+.btn:hover .btnEffect{
+    left: 0;
+}
+
+.btn:hover{
+    color: black;
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 1rem 0 0;
+    height: 1rem;
+}
+@media screen and (max-width:840px) {
+    .bg{
+        right: -10rem;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .bg{
+        right: -10rem;
+    }
+    
+}
