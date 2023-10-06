@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <section id="contactPage">
       <div id="contact">
-        <h1 className="conatctPageTitle">Contact Me</h1>
+        <h2 className="conatctPageTitle">Contact Me</h2>
         <span className="contactDesc">
           Please fill out the below form to discuss any work opportunities
         </span>

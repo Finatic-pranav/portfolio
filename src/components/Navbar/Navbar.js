@@ -15,6 +15,7 @@ const Navbar = () => {
     background: "",
     transition: "all 0.5s",
   });
+  const [showMenu, setShowMenu] = useState(false);
   const handelEnterMouse = () => {
     setDivStyle((prev) => ({
       ...prev,
@@ -34,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{height:showMenu?'10rem':'5rem'}}>
       <img src={logo} alt="logo" className="logo" />
       <div className="desktopMenu">
         <Link
@@ -97,6 +98,56 @@ const Navbar = () => {
         <img src={contactimg} alt="contactimg" className="desktopMenuImg" />
         <div style={{ color: divStyle.color, zIndex: "3" }}>Contact Me!</div>
       </button>
+      <div className="menuicon" onClick={() => setShowMenu(!showMenu)}>
+        <span style={{transform:showMenu?'rotateZ(45deg)':'rotateZ(0deg)',margin:!showMenu?'1rem':'0', transition:'all 0.3s'}}></span>
+        <span style={{transform:showMenu?'rotateZ(-45deg)':'rotateZ(0deg)',margin:!showMenu?'1rem':'0', transition:'all 0.3s'}}></span>
+      </div>
+      <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
+        <Link
+          activeClass="active"
+          to="intro"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="listItem"
+        >
+          Home
+        </Link>
+        <Link
+          activeClass="active"
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="listItem"
+        >
+          About
+        </Link>
+        <Link
+          activeClass="active"
+          to="works"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="listItem"
+        >
+          Portfolio
+        </Link>
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="listItem"
+        >
+          Contact
+        </Link>
+      </div>
     </nav>
   );
 };

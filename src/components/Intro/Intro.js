@@ -3,7 +3,6 @@ import "./Intro.css";
 import bg from "../../images/my_image.png";
 import btnImg from "../../images/download_font.svg";
 import btnImg2 from "../../images/hireme.png";
-import cd from "../../images/Pranav_srivastava_Resume.png";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
 
@@ -53,7 +52,7 @@ const Intro = () => {
           </button>
         </div>
       </div>
-      <img src={bg} alt="image" className="bg" />
+      <img src={bg} alt="image_tag" className="bg" />
     </section>
   );
 };

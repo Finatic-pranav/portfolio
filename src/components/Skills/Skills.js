@@ -52,7 +52,7 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <span className="skillTitle">What I do</span>
+      <h2 className="skillTitle">What I do</h2>
       <span className="skilDesc">
         🌱I'm committed to staying up-to-date with the latest trends in web
         development, constantly striving to enhance my skill set and contribute
